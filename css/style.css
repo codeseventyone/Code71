@@ -1,0 +1,268 @@
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+	background: white;
+}
+
+h2{
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	margin:0;
+	left: 0;
+	bottom: 30px;
+	animation-name: studio;
+	-webkit-animation-name: studio;
+}
+
+.site-logo{
+	animation: zoomOut 2s linear;
+	-webkit-animation-name: zoomOut;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+}
+
+#about-mod {
+    position: absolute;
+    top: 30px;
+    left: -50px;
+    font-size: 50px;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 8s;
+    z-index: 999;
+    color: #015001;
+    cursor: pointer;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 40px}
+}
+
+@keyframes slide {
+    100% { left: 40px}
+}
+
+
+.contact{
+	z-index: 99
+}
+
+.contact .fa-paper-plane{
+	font-size: 25px; 
+	color: green; 
+	position: fixed; 
+	left: 0; 
+	bottom:0; 
+	width: 100%;
+	cursor: pointer; 
+	z-index: 999
+}
+
+.jumbotron.vertical-center {
+	margin-bottom: 0;
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.lead{
+	font-size: 20px;
+}
+
+.contact .safeClass{
+	bottom: 90%;
+	left: 95%;
+	color: red;
+}
+
+.bio-header{
+	padding: 0;
+	border:0;
+}
+.bio-title{
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.sub-head{
+	color:#015001;
+ }
+
+.vertical-center {
+	min-height: 100%;  /* Fallback for vh unit */
+	min-height: 100vh; /* You might also want to use
+	/* Make it a flex container */
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex; 
+	
+	/* Align the bootstrap's container vertically */
+	-webkit-box-align : center;
+	-webkit-align-items : center;
+	-moz-box-align : center;
+	-ms-flex-align : center;
+	align-items : center;
+	width: 100%;
+	-webkit-box-pack : center;
+	-moz-box-pack : center;
+	-ms-flex-pack : center;
+	-webkit-justify-content : center;
+	justify-content : center;
+	position: relative;
+	z-index: 9;
+}
+
+@keyframes zoomOut {
+		0%   {transform: scale(0); -webkit-transform:scale(0);}
+		100% {transform: scale(1); -webkit-transform: scale(1);}
+}
+
+@keyframes studio {
+	0%   {transform: scale(0);-webkit-transform: scale(0);}
+	100% {transform: scale(1);-webkit-transform: scale(1);}
+}
+
+.animated {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+.animateAfter2{
+	padding: 0 15px;
+	animation-delay: 2s;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 40px;
+}
+
+@keyframes bounceInUp {
+	from, 60%, 75%, 90%, to {
+		animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+	}
+
+	from {
+		opacity: 0;
+		transform: translate3d(0, 3000px, 0);
+		-webkit-transform: translate3d(0, 3000px, 0);
+	}
+
+	60% {
+		opacity: 1;
+		transform: translate3d(0, -20px, 0);
+		-webkit-transform: translate3d(0, -20px, 0);
+	}
+
+	75% {
+		transform: translate3d(0, 10px, 0);
+		-webkit-transform: translate3d(0, 10px, 0);
+	}
+
+	90% {
+		transform: translate3d(0, -5px, 0);
+		-webkit-transform: translate3d(0, -5px, 0);
+	}
+
+	to {
+		transform: translate3d(0, 0, 0);
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+}
+
+.bounceInUp {
+	animation-name: bounceInUp;
+	-webkit-animation-name: bounceInUp;
+}
+
+@keyframes slideInLeft {
+	from {
+		transform:scale(.5) translateX(0);
+		-webkit-transform:scale(.5) translateX(0);
+		visibility: visible;
+		opacity: 0;
+		color: green;
+	}
+	10% {
+		bottom:10%;
+		opacity: .25;
+		color: green;
+	}
+	30% {
+		bottom:30%;
+		opacity: .5;
+		color: green;
+	}
+	50% {
+		bottom:15%;
+		opacity: 1;
+		color: green;
+	}
+	to {
+	transform: scale(1) translateX(95%);
+	-webkit-transform: scale(1) translateX(95%);
+	bottom:90%;
+	opacity: 1;
+	color: red;
+	}
+}
+
+.slideInLeft {
+  animation-name: slideInLeft;
+  -webkit-animation-name: slideInLeft;
+  animation-duration: 5s;
+  -webkit-animation-duration: 5s;
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+}
+
+@media screen and (max-width: 567px) {
+	@keyframes slideInLeft {
+		from {
+			transform:scale(.5) translateX(0);
+			-webkit-transform:scale(.5) translateX(0);
+			visibility: visible;
+			opacity: 0;
+			color: green;
+		}
+		10% {
+			bottom:10%;
+			opacity: .25;
+			color: green;
+		}
+		30% {
+			bottom:30%;
+			opacity: .5;
+			color: green;
+		}
+		50% {
+			bottom:15%;
+			opacity: 1;
+			color: green;
+		}
+		to {
+		transform: scale(1) translateX(85%)!important;
+		-webkit-transform: scale(1) translateX(85%);
+		bottom:90%;
+		opacity: 1;
+		color: red;
+		}
+	}
+	#about-mod {
+		top:20px;
+		font-size: 30px;
+	}
+
+	@-webkit-keyframes slide {
+    100% { left: 20px}
+	}
+
+	@keyframes slide {
+	    100% { left: 20px}
+	}
+}

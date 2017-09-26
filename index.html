@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Code 71 :: Web Design &amp; Development Studio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Code 71, Code Seventy One, Web Design & Development, Web Design & Development in Bangladesh, Web Design & Development in BD, WordPress" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+<link href='css/style.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="about-us">
+    <i class="fa fa-user-circle" id="about-mod" data-toggle="modal" data-target="#aboutModal"></i>
+</div>
+
+<div class="contact">
+    <i class="fa fa-paper-plane animated slideInLeft" id="contact-mod" data-toggle="modal" data-target="#myModal"></i>
+</div>
+
+<h2 class="animated bounceInUp animateAfter2">Web Design &amp; Development Studio</h2> 
+<div class="vertical-center">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="images/logo.png" class="site-logo">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="aboutModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <!-- <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3 class="modal-title">About Us</h3>
+            </div> -->
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="modal-header bio-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <center>
+                            <img src="images/shahidul-Islam.jpg" name="Shahid" border="0" class="img-circle"><br>
+                            <h3 class="media-heading bio-title">Shahidul Islam</h3>
+                            <h4 class="media-heading sub-head">Web Developer</h4>
+                            <span><strong>Skills: </strong></span>
+                                <span class="label label-warning">HTML5/CSS3</span>
+                                <span class="label label-info">jQuery</span>
+                                <span class="label label-success">WordPress</span>
+                                <span class="label label-info">UI design</span>
+                            </center>
+                            <hr>
+                            <center>
+                            <p class="text-left"><strong>Bio: </strong><br>
+                                Specialized in front-end and back-end development having mastering expertise in HTML5, CSS3, jQuery, WordPress as well as UI design.</p> 
+                            </center>
+                        </div>
+                        <div class="modal-footer">
+                            <center>
+                                <a href="doc/ResumeOfShahidulIslam.pdf" class="btn btn-primary">View Resume</a>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- // About Us Content -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3 class="modal-title">GET IN TOUCH</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="lead">Email me with any questions or inquiries. I'll be happy to help you.</p>
+                        <form id="contact-form" method="post" action="contact.php" role="form">
+                            <div class="messages"></div>
+                            <div class="controls">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_name">Name *</label>
+                                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required" data-error="Name is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="form_email">Email *</label>
+                                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_name">Subject *</label>
+                                            <input id="form_name" type="text" name="subject" class="form-control" placeholder="Please enter subject *" required="required" data-error="Subject is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form_message">Message *</label>
+                                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave a message."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="g-recaptcha" data-sitekey="6Lfuky0UAAAAANTEH550biGS2mdNqEG00UMhnmk2"></div>
+                                            </div>
+                                    </div> -->
+                                    <div class="col-md-12">
+                                        <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="js/validator.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
